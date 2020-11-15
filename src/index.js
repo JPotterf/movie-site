@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 import App from './app';
+import { GlobalStyles } from './globalStyles';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-    <App />,
+ReactDOM.render(<>
+    <GlobalStyles/>
+    <App />
+    </>,
   document.getElementById('root')
 );
 
